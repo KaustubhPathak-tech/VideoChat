@@ -5,7 +5,7 @@ import Peer from 'simple-peer';
 
 const SocketContext =createContext();
 
-const socket = io('http://localhost:5000');   //https://video-chat-server-blue.vercel.app
+const socket = io('https://video-chat-server-blue.vercel.app');   //https://video-chat-server-blue.vercel.app
 
 const ContextProvider = ({children}) => {
 

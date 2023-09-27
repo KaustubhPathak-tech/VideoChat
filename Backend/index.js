@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const io = require("socket.io")(server ,{
     cors: {
-         origin:"*:*",
+         origin:"https://videochatapp09.netlify.app/",
          methods: ["GET", "POST"]
     }
 });
@@ -36,4 +36,4 @@ io.on('connection', (socket) => {
 
 });
 
-server.listen(PORT, () => console.log('Server listening on port ${PORT} '));
+server.listen(PORT, () => console.log(`Server listening on port ${PORT} `));
