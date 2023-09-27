@@ -16,6 +16,7 @@ const PORT = process.env.PORT ||5000;
 app.get("/", (req, res) => {
     res.send('Server is running.');
 });
+io.set('origins', '*:*');
 
 io.on('connection', (socket) => {
     socket.emit('me',socket.id);
